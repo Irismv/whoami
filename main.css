@@ -16,3 +16,8 @@ body {
       }
       body {margin:0;padding:0}
       
+      img.rcr {
+        border-radius: 30px;
+        float: right;
+        display: block;
+    }
