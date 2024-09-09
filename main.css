@@ -1,7 +1,9 @@
+
+
 body {
     font-family: cursive;
     
-    
+    /* Fonts*/
     }
     table {
         font-family: arial, sans-serif;
@@ -20,4 +22,39 @@ body {
         border-radius: 30px;
         float: right;
         display: block;
+    }
+    ul.Navigatie {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+ 
+       
+    a.Navigatie {
+      color: aliceblue;
+    }
+    ul.Navigatie {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #E6E6FA ;
+    }
+    
+    li.Navigatie {
+      float: left;
+    }
+    
+    li.Navigatie a.Navigatie {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    /* hover color */
+    li.Navigatie a:hover.Navigatie {
+      background-color: #6495ed;
     }
