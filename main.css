@@ -58,3 +58,7 @@ body {
     li.Navigatie a:hover.Navigatie {
       background-color: #6495ed;
     }
+    tr.table 
+  {
+    background-color: #6495ed;
+  }
