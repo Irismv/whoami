@@ -1,64 +1,86 @@
-
-
 body {
-    font-family: cursive;
-    
-    /* Fonts*/
-    }
-    table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        width: 100%;
-      }
-      
-      td, th {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
-      }
-      body {margin:0;padding:0}
-      
-      img.rcr {
-        border-radius: 30px;
-        float: right;
-        display: block;
-    }
-    ul.Navigatie {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-  
+  font-family: cursive;
+  margin: 0;
+  padding: 0;
+}
+
+/* Font */
+table  {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+/* Navigation Style */
+ul.Navigatie {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #E6E6FA;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+ul.Navigatie li.Navigatie {
+  float: left;
+}
+
+ul.Navigatie li a.Navigatie {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Hover color */
+ul.Navigatie li a.Navigatie:hover {
+  background-color: #6495ed;
+}
+
+/* Flexbox  */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #E6E6FA;
+  padding: 0 16px;
+}
+
+.hz-logo {
+  max-height: 50px;
+}
+
+/* Table style */
+tr.table {
+  background-color: #6495ed;
+}
  
-       
-    a.Navigatie {
-      color: aliceblue;
-    }
-    ul.Navigatie {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #E6E6FA ;
-    }
-    
-    li.Navigatie {
-      float: left;
-    }
-    
-    li.Navigatie a.Navigatie {
-      display: block;
-      color: black;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-    
-    /* hover color */
-    li.Navigatie a:hover.Navigatie {
-      background-color: #6495ed;
-    }
-    tr.table 
-  {
-    background-color: #6495ed;
-  }
+p { 
+    font-size: 20px; 
+} 
+/* footer */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #6495ed;
+  color: white;
+  text-align: center;
+  
+}
+/* text home/about me/faq/blog/dashboard */
+b.text  {
+  color: aliceblue;
+}
+body.Dashboard {
+  background-color: #E6E6FA;
+}
