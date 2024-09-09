@@ -5,13 +5,14 @@ body {
 }
 
 /* Font */
-table  {
+table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
 
-td, th {
+td,
+th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
@@ -62,10 +63,11 @@ nav {
 tr.table {
   background-color: #6495ed;
 }
- 
-p { 
-    font-size: 20px; 
-} 
+
+p {
+  font-size: 20px;
+}
+
 /* footer */
 .footer {
   position: fixed;
@@ -75,30 +77,60 @@ p {
   background-color: #6495ed;
   color: white;
   text-align: center;
-  
+
 }
+
 /* text home/about me/faq/blog/dashboard */
-b.text  {
+b.text {
   color: aliceblue;
 }
+
 body.Dashboard {
   background-color: #E6E6FA;
 }
 
 /*border images */
 
-img.images-profile{
+img.images-profile {
 
-margin-bottom: 15px;
-border: 2px solid black;
-max-width: fit-content;
+  margin-bottom: 15px;
+  border: 2px solid black;
+  max-width: fit-content;
 
 }
+
 .image-container {
   display: flex;
   flex-direction: row;
 
-  gap: 20px; }
-  p.faq {
-    font-size: medium;
-  }
+  gap: 20px;
+}
+/*font size faq questions inside */
+p.faq {
+  font-size: medium;
+}
+table.faq-questions
+{
+  display: flex;
+ 
+}
+/*backgroundcolor faq */
+body.faq-back
+{
+  background-color: #E6E6FA;
+}
+/*size bottom faq */
+p.question1
+{
+  font-size: large;
+
+}
+p.question2
+{
+  font-size: small;
+}
+img.questionmark
+{
+  display: flex;
+  float: right;
+}
