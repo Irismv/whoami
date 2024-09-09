@@ -84,3 +84,21 @@ b.text  {
 body.Dashboard {
   background-color: #E6E6FA;
 }
+
+/*border images */
+
+img.images-profile{
+
+margin-bottom: 15px;
+border: 2px solid black;
+max-width: fit-content;
+
+}
+.image-container {
+  display: flex;
+  flex-direction: row;
+
+  gap: 20px; }
+  p.faq {
+    font-size: medium;
+  }

@@ -34,7 +34,7 @@
             <th rowspan="3">1</th>
             <td>PCO</td>
             <td>Assessment Website</td>
-            <td><input></input></td>
+            <td><input id="Mygrade" type="text"></input></td>
             <td>2,5</td>
 
         </tr>
@@ -42,14 +42,14 @@
 
             <td>CSB</td>
             <td> Written Exam</td>
-            <td><input></input></td>
+            <td><input id="Mygrade" type="text"></input></td>
 
             <td>5</td>
         </tr>
         <tr>
             <td>PBA</td>
             <td>Case Study Exam</td>
-            <td><input></input></td>
+            <td><input id="Mygrade" type="text"></input></td>
 
             <td>5</td>
         </tr>
@@ -60,48 +60,58 @@
             <th rowspan="2">2</th>
             <td>PPD-E</td>
             <td>PPD-E Exam</td>
-            <td> <input></input></td>
+            <td><input class="Mygrade" type="text"></input></td>
             <td>12,5</td>
         </tr>
         <tr>
             <td>OOP</td>
             <td>OOP Exam</td>
-            <td><input></input></td>
+            <td><input class="Mygrade" type="text"></input></td>
             <td>10</td>
         </tr>
         <th rowspan="2">3</th>
         <td>Framework-project 1</td>
         <td>Presentation (with group)</td>
-        <td><input></input></td>
+        <td><input class="Mygrade" type="text"></input></td>
         <td>10</td>
         </tr>
         <tr>
             <td>Business IT consultancy basics</td>
             <td>Presentation (with group) </td>
-            <td><input></input></td>
+            <td><input class="Mygrade" type="text"></input></td>
             <td> x</td>
         </tr>
-<th rowspan="2">4</th>
-<td>Framework-project 2</td>
-<td>Portfolio</td>
-<td><input></input></td>
-<td>10</td>
-</tr>
-<tr>
-<td>Business IT consultancy basics </td>
-<td>Portfolio</td>
-<td><input></input></td>
-<td>2,5</td>
+        <th rowspan="2">4</th>
+        <td>Framework-project 2</td>
+        <td>Portfolio</td>
+        <td><input class="Mygrade" type="text"></input></td>
+        <td>10</td>
+        </tr>
+        <tr>
+            <td>Business IT consultancy basics </td>
+            <td>Portfolio</td>
+            <td><input class="Mygrade" type="text"></input></td>
+            <td>2,5</td>
 
-</tr>
+        </tr>
     </table>
-    
+<!--Stukje javascript-->
+<script>
+    //Slaat locaal de ingevulde waarde op
+document.getElementsByClassName("Mygrade").value = localStorage.getItem("inputValue") || "";
+//zorgt dat de ingevoerde waarde blijft staan, ook na een refresh
+document.getElementsByClassName("Mygrade").addEventListener("input", function() {
+            localStorage.setItem("inputValue", this.value);
+        });
+
+</script>
 </body>
 <!--Foot text-->
 <div class="footer">
-    <marquee direction="right" behavior="alternate" >
-    
-        © Welkom op mijn site! 
-</marquee>
-  </div>
+    <marquee direction="right" behavior="alternate">
+
+        © Welkom op mijn site!
+    </marquee>
+</div>
+
 </html>
