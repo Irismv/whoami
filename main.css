@@ -62,6 +62,7 @@ nav {
 /* Table style */
 tr.table {
   background-color: #6495ed;
+  color: #E6E6FA;
 }
 
 p {
@@ -81,9 +82,12 @@ p {
 }
 
 /* text home/about me/faq/blog/dashboard */
-b.text {
+h1.text {
   color: aliceblue;
+  text-align: center;
+  font-size: large;
 }
+
 
 body.Dashboard {
   background-color: #E6E6FA;
@@ -106,9 +110,20 @@ img.images-profile {
   gap: 20px;
 }
 /*font size faq questions inside */
-p.faq {
+p.faq  {
   font-size: medium;
 }
+p.homep {
+  font-size: small;
+    position: relative;
+  
+    top: calc(-3em + 10px);
+}
+
+.homeDetails[open] {
+  position: fixed;
+}
+
 table.faq-questions
 {
   display: flex;
@@ -135,7 +150,13 @@ img.questionmark
   float: right;
 margin-right: 20px;}
 
-summary{
+.homeSummary{
   cursor: pointer;
+  position: relative;
+  top: calc(12em + 4px);
+}
+
+.table-Future {
+  padding-left: 5%;
 }
 
