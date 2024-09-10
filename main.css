@@ -161,33 +161,27 @@ margin-right: 20px;}
 
 .table-Future {
   padding-left: 5%;
+
+
 }
 
-/* -------banner-------  */
-.image-container {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-}
-
-.image-container img{
-  display: block;
-  height: auto;
-  width: 100%;
-}
-
-.overlay-text {
-  position:absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #00000063;
-  color: #ffffff;
-  padding: 15px 20px;
-  font-size: 100px;
-  font-family: Lato;
-  font-weight: 900;
+.wcye {
   text-align: center;
-  border: 3px solid 0000007c;
-  border-radius: 20px;
+  padding-left: 0;
+  margin-left: 0;
+  list-style-position: inside;
+}
+
+.photomain
+{
+height: 150px;
+width: 200;
+
+}
+.fixed-bottom-img {
+  position: absolute;
+  bottom: 80px; /* Adjust this value based on the height of your footer */
+  right: 20px; /* Adjust to move it away from the edge of the screen */
+  border: 2px solid black;
+  border-radius: 10px;
 }
