@@ -133,4 +133,9 @@ img.questionmark
 {
   display: flex;
   float: right;
+margin-right: 20px;}
+
+summary{
+  cursor: pointer;
 }
+
