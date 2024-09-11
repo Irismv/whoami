@@ -258,3 +258,9 @@ width: 200;
 .read-more:hover {
   background-color: #4169e1;
 }
+.text2
+{
+  color: aliceblue;
+  text-align: center;
+  font-size: large;
+}
