@@ -326,3 +326,8 @@ width: 200;
   font-size: 1em;
   margin-bottom: 20px;
 }
+.navbar #active
+{
+  background-color: #6495ed;
+ 
+}
