@@ -2,7 +2,7 @@ body {
   font-family: "Comic Sans MS", cursive, sans-serif;
   margin: 0;
   padding: 0;
-  background-color:#E6E6FA
+  background-color: #E6E6FA;
 }
 
 /* Font */
@@ -20,7 +20,7 @@ th {
 }
 
 /* Navigation Style */
-ul.Navigatie {
+ul.navigatie {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -30,11 +30,11 @@ ul.Navigatie {
   flex-grow: 1;
 }
 
-ul.Navigatie li.Navigatie {
+ul.navigatie li.navigatie {
   float: left;
 }
 
-ul.Navigatie li a.Navigatie {
+ul.navigatie li a.navigatie {
   display: block;
   color: black;
   text-align: center;
@@ -43,11 +43,11 @@ ul.Navigatie li a.Navigatie {
 }
 
 /* Hover color */
-ul.Navigatie li a.Navigatie:hover {
+ul.navigatie li a.navigatie:hover {
   background-color: #6495ed;
 }
 
-/* Flexbox  */
+/* Flexbox Navigation */
 nav {
   display: flex;
   justify-content: space-between;
@@ -60,7 +60,7 @@ nav {
   max-height: 50px;
 }
 
-/* Table style */
+/* Table Styling */
 tr.table {
   background-color: #6495ed;
   color: #E6E6FA;
@@ -70,7 +70,7 @@ p {
   font-size: 20px;
 }
 
-/* footer */
+/* Footer */
 .footer {
   position: fixed;
   left: 0;
@@ -79,10 +79,9 @@ p {
   background-color: #6495ed;
   color: white;
   text-align: center;
-
 }
 
-/* text home/about me/faq/blog/dashboard */
+/* Header*/
 h1.text {
   color: aliceblue;
   text-align: center;
@@ -90,83 +89,78 @@ h1.text {
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-
-body.Dashboard {
+/*  Background */
+body.dashboard {
   background-color: #E6E6FA;
 }
 
-/*border images */
-
+/* Image Borders */
 img.images-profile {
-
   margin-bottom: 15px;
   border: 2px solid black;
   max-width: fit-content;
-
 }
 
 .image-container {
   display: flex;
   flex-direction: row;
-
   gap: 20px;
 }
-/*font size faq questions inside */
-p.faq  {
+
+/* FAQ Text */
+p.faq {
   font-size: medium;
 }
+
 p.homep {
   font-size: small;
-    position: relative;
-  
-    top: calc(-3em + 10px);
+  position: relative;
+  top: calc(-3em + 10px);
 }
 
-.homeDetails[open] {
+/* FAQ Layout */
+.homedetails[open] {
   position: fixed;
-float: right;
-
+  float: right;
 }
 
-table.faq-questions
-{
+table.faq-questions {
   display: flex;
- 
 }
-/*backgroundcolor faq */
-body.faq-back 
-{
+
+/* FAQ Background */
+body.faq-back {
   background-color: #E6E6FA;
 }
-/*size bottom faq */
-p.question1
-{
-  font-size: large;
 
+/* FAQ Font Sizes */
+p.question1 {
+  font-size: large;
 }
-p.question2
-{
+
+p.question2 {
   font-size: small;
 }
-img.questionmark
-{
+
+/* Question Mark Image */
+img.questionmark {
   display: flex;
   float: right;
-margin-right: 20px;}
+  margin-right: 20px;
+}
 
-.homeSummary{
+.homesummary {
   cursor: pointer;
   position: relative;
   top: calc(12em + 4px);
-  ;
 }
 
-.table-Future {
+/* Future Table */
+.table-future {
   padding-left: 5%;
-
-
 }
 
+/* List Style */
 .wcye {
   text-align: center;
   padding-left: 0;
@@ -174,13 +168,12 @@ margin-right: 20px;}
   list-style-position: inside;
 }
 
-.photomain
-{
-height: 150px;
-width: 200;
-
+.photomain {
+  height: 150px;
+  width: 200;
 }
 
+/* Progress Bar */
 .wrapper {
   width: 500px;
 }
@@ -190,7 +183,7 @@ width: 200;
   background-color: #e0e0e0;
   padding: 3px;
   border-radius: 3px;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .progress-bar-fill {
@@ -203,13 +196,12 @@ width: 200;
 }
 
 .progress-text {
-  text-align: right; 
-  margin-top: 5px; /* ruimte tussen balk en tekst */
+  text-align: right;
+  margin-top: 5px;
   font-size: 16px;
 }
 
-
-/* Blogposts Layout */
+/* Blog Post Layout */
 .blogposts {
   display: flex;
   flex-wrap: wrap;
@@ -226,9 +218,9 @@ width: 200;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  flex: 1 1 calc(50% - 20px); 
-  box-sizing: border-box; } 
-
+  flex: 1 1 calc(50% - 20px);
+  box-sizing: border-box;
+}
 
 .post-date {
   font-size: 0.9em;
@@ -259,13 +251,15 @@ width: 200;
 .read-more:hover {
   background-color: #4169e1;
 }
-.text2
-{
+
+/* Text Styling */
+.text2 {
   color: aliceblue;
   text-align: center;
   font-size: large;
 }
-/* SWOT Container */
+
+/* SWOT Layout */
 .swot-container {
   display: flex;
   flex-wrap: wrap;
@@ -282,10 +276,9 @@ width: 200;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  flex: 1 1 calc(50% - 20px); 
+  flex: 1 1 calc(50% - 20px);
   box-sizing: border-box;
 }
-
 
 .swot-box h2 {
   font-size: 1.5em;
@@ -297,7 +290,7 @@ width: 200;
   margin-bottom: 20px;
 }
 
-/* study choice box */
+/* for Study Choice */
 .centered-box {
   display: flex;
   justify-content: center;
@@ -326,12 +319,14 @@ width: 200;
   font-size: 1em;
   margin-bottom: 20px;
 }
-.Navigatie #active
-{
+
+/* Navbar Active  */
+.navigatie #active {
   background-color: #6495ed;
- 
 }
-.hoverfaq
-{
+
+/* FAQ Hover */
+.hoverfaq {
   cursor: pointer;
 }
+
