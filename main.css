@@ -123,6 +123,9 @@ p.homep {
   position: fixed;
   float: right;
 }
+.homedetails[open] > summary {
+  list-style-type: '▲';
+}
 
 table.faq-questions {
   display: flex;
@@ -158,6 +161,7 @@ img.questionmark {
 /* Future Table */
 .table-future {
   padding-left: 5%;
+  
 }
 
 /* List Style */
