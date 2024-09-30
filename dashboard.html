@@ -14,14 +14,13 @@
         <ul class="navigatie">
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="https://oer.hz.nl/6978cdea-fb31-430b-9bf9-63206aa07754">Course and Examination
-                    Regulations</a>
+                <a href="https://oer.hz.nl/6978cdea-fb31-430b-9bf9-63206aa07754">| Course and Examinat Regulations |</a>
                 <a
-                    href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf">The
-                    Implementation Regulations </a>
-                <a href="https://learn.hz.nl/my/">Learn environment</a>
-                <a href="#">Study progress</a>
-                <a href="https://github.com/HZ-HBO-ICT"> Github page</a>
+                    href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf">
+                  | The Implementation Regulations |</a>
+                <a href="https://learn.hz.nl/my/">| Learn environment |</a>
+                <a href="#">| Study progress |</a>
+                <a href="https://github.com/HZ-HBO-ICT">| Github page |</a>
             </div>
             <span style="font-size:30px;cursor:pointer;color:  #6495ed;" onclick="openNav()">&#9776; </span>
             <script>
@@ -38,7 +37,7 @@
             <li class="navigatie"><a class="navigatie" href="index.html">Home</a></li>
             <li class="navigatie"><a class="navigatie" href="profile.html">My Profile</a></li>
             <li class="navigatie"><a class="navigatie" href="FAQ.html">FAQ</a></li>
-            <li class="navigatie"><a class="navigatie" href="Blog.html">Blog</a></li>
+            <li class="navigatie"><a class="navigatie" href="blog.html">Blog</a></li>
             <li class="navigatie"><a class="navigatie" href="dashboard.html" id="active">Dashboard</a></li>
         </ul>
         <a href="https://hz.nl/"><img src="images/hz-university-of-applied-sciences-logo.png" class="hz-logo"
@@ -58,7 +57,7 @@
             <th rowspan="3">1</th>
             <td>PCO</td>
             <td>Assessment Website</td>
-            <td><input id="Mygrade" type="text"></input></td>
+            <td><input class="Mygrade" type="number" step="0.1" min="0" max="10"></input></td>
             <td>2,5</td>
 
         </tr>
@@ -66,14 +65,14 @@
 
             <td>CSB</td>
             <td> Written Exam</td>
-            <td><input id="Mygrade" type="text"></input></td>
+            <td><input class="Mygrade" type="number" step="0.1" min="0" max="10"></input></td>
 
             <td>5</td>
         </tr>
         <tr>
             <td>PBA</td>
             <td>Case Study Exam</td>
-            <td><input id="Mygrade" type="text"></input></td>
+            <td><input class="Mygrade" type="number" step="0.1" min="0" max="10"></input></td>
 
             <td>5</td>
         </tr>
@@ -84,37 +83,37 @@
             <th rowspan="2">2</th>
             <td>PPD-E</td>
             <td>PPD-E Exam</td>
-            <td><input class="Mygrade" type="text"></input></td>
+            <td><input class="Mygrade" type="number" step="0.1" min="0" max="10"></input></td>
             <td>12,5</td>
         </tr>
         <tr>
             <td>OOP</td>
             <td>OOP Exam</td>
-            <td><input class="Mygrade" type="text"></input></td>
+            <td><input class="Mygrade" type="number" step="0.1" min="0" max="10"></input></td>
             <td>10</td>
         </tr>
         <th rowspan="2">3</th>
         <td>Framework-project 1</td>
         <td>Presentation (with group)</td>
-        <td><input class="Mygrade" type="text"></input></td>
+        <td><input class="Mygrade" type="number" step="0.1" min="0" max="10"></input></td>
         <td>10</td>
         </tr>
         <tr>
             <td>Business IT consultancy basics</td>
             <td>Presentation (with group) </td>
-            <td><input class="Mygrade" type="text"></input></td>
+            <td><input class="Mygrade" type="number" step="0.1" min="0" max="10"></input></td>
             <td> x</td>
         </tr>
         <th rowspan="2">4</th>
         <td>Framework-project 2</td>
         <td>Portfolio</td>
-        <td><input class="Mygrade" type="text"></input></td>
+        <td><input class="Mygrade" type="number" step="0.1" min="0" max="10"></input></td>
         <td>10</td>
         </tr>
         <tr>
             <td>Business IT consultancy basics </td>
             <td>Portfolio</td>
-            <td><input class="Mygrade" type="text"></input></td>
+            <td><input class="Mygrade" type="number" step="0.1" min="0" max="10"></input></td>
             <td>2,5</td>
 
         </tr>
@@ -126,7 +125,60 @@
         </div>
         <div class="progress-text">60 ECS</div>
     </div>
+    <!--javascript stuk-->
+    <script>
+        const totalEC = 60; // Total ECs
+        const ecValues = [2.5, 5, 5, 12.5, 10, 10, 10, 2.5]; // ECs per course
 
+        // Function to save grades in LocalStorage
+        function saveGrade(input, index) {
+            localStorage.setItem('grade-' + index, input.value);
+        }
+
+        // Function to load grades from LocalStorage
+        function loadGrades() {
+            document.querySelectorAll('.Mygrade').forEach((input, index) => {
+                input.value = localStorage.getItem('grade-' + index) || '';
+            });
+        }
+
+        // Function to update progress bar
+        function updateProgressBar() {
+            let earnedEC = 0; // Earned ECs
+
+            //  earned ECs for grades >= 5.5
+            document.querySelectorAll('.Mygrade').forEach((input, index) => {
+                const grade = parseFloat(input.value);
+                if (grade >= 5.5) {
+                    earnedEC += ecValues[index] || 0;
+                }
+            });
+
+            // Calculate percentage and update progress bar
+            const progressPercentage = (earnedEC / totalEC) * 100;
+            const progressBarFill = document.querySelector('.progress-bar-fill');
+            progressBarFill.style.width = progressPercentage + '%';
+            progressBarFill.style.backgroundColor = earnedEC >= 45 ? 'green' : '#659cef';
+            document.querySelector('.progress-text').textContent = `${earnedEC} EC van de ${totalEC} EC behaald`;
+        }
+
+        // saves grade
+        document.querySelectorAll('.Mygrade').forEach((input, index) => {
+            input.addEventListener('input', () => {
+                saveGrade(input, index);
+                updateProgressBar();
+            });
+        });
+
+        // Load saved grades and update progress bar 
+        window.onload = function () {
+            loadGrades();
+            updateProgressBar();
+        };
+    </script>
+    
+    
+    
 </body>
 <!--Foot text-->
 <div class="footer">
