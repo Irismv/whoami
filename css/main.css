@@ -378,3 +378,15 @@ img.questionmark {
   font-size: 36px;
   margin-left: 50px;
 }
+/* animation */
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: scroll 10s linear infinite;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+}
