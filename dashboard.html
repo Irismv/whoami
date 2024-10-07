@@ -102,7 +102,7 @@
             <td>Business IT consultancy basics</td>
             <td>Presentation (with group) </td>
             <td><input class="Mygrade" type="number" step="0.1" min="0" max="10"></input></td>
-            <td> x</td>
+            <td> 1,25</td>
         </tr>
         <th rowspan="2">4</th>
         <td>Framework-project 2</td>
@@ -114,8 +114,15 @@
             <td>Business IT consultancy basics </td>
             <td>Portfolio</td>
             <td><input class="Mygrade" type="number" step="0.1" min="0" max="10"></input></td>
+            <td>1,25</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Extra EC</th>
+            <td>It personality</td>
+            <td>extra ECS</td>
+            <td><input class="Mygrade" type="number" step="0.1" min="0" max="10"></input></td>
             <td>2,5</td>
-
+            </tr>
         </tr>
     </table>
     <b>My EC progress: *NBSA boundary > 45*</b>
@@ -128,7 +135,7 @@
     <!--javascript stuk-->
     <script>
         const totalEC = 60; // Total ECs
-        const ecValues = [2.5, 5, 5, 12.5, 10, 10, 10, 2.5]; // ECs per course
+        const ecValues = [2.5, 5, 5, 12.5, 10, 10, 1.25 , 10, 1.25 , 2.5]; // ECs per course
 
         // Function to save grades in LocalStorage
         function saveGrade(input, index) {
@@ -175,8 +182,12 @@
             loadGrades();
             updateProgressBar();
         };
+        let Mygrade = document.querySelectorAll('.Mygrade').forEach
+        if( Mygrade < 5.5) {
+         
+        }
+       
     </script>
-    
     
     
 </body>
