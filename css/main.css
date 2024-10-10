@@ -383,7 +383,7 @@ img.questionmark {
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
-  animation: scroll 10s linear infinite;
+  animation: scroll 15s linear infinite;
 }
 
 .marquee span {
