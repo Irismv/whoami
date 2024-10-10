@@ -28,9 +28,11 @@ ul.navigatie {
   display: flex;
   align-items: center;
   flex-grow: 1;
+  justify-content: space-between
+  
 }
 
-ul.navigatie li.navigatie {
+ li.navigatie {
   float: left;
 }
 
@@ -58,6 +60,7 @@ nav {
 
 .hz-logo {
   max-height: 50px;
+  
 }
 
 /* Table Styling */
@@ -87,12 +90,10 @@ h1.text {
   text-align: center;
   font-size: large;
   font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: #6495ed;;
 }
 
-/*  Background */
-body.dashboard {
-  background-color: #E6E6FA;
-}
+
 
 /* Image Borders */
 img.images-profile {
@@ -130,12 +131,6 @@ p.homep {
 table.faq-questions {
   display: flex;
 }
-
-/* FAQ Background */
-body.faq-back {
-  background-color: #E6E6FA;
-}
-
 /* FAQ Font Sizes */
 p.question1 {
   font-size: large;
@@ -389,4 +384,60 @@ img.questionmark {
 .marquee span {
   display: inline-block;
   padding-left: 100%;
+}
+/* all inline css */
+
+  /* blog */
+  .blogbackgroundh1 {
+    background-color: #6495ed;
+     height: 20px;
+ }
+
+ .hamburgermenu {
+    font-size:30px;
+    cursor:pointer;
+    color:  #6495ed;
+ }
+
+ /* profile */
+ .profilebackground {
+    background-color:#6495ed;
+ }
+
+ .profileheads {
+    background-color:  #E6E6FA;
+ }
+
+ /* index */
+ .indexbackground {
+    background-color:  #E6E6FA;
+ }
+ .divindex {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3%;
+ }
+ /* blogposts */
+.bpostp{
+    background-color: #6495ed;
+}
+.text {
+  background-color: #6495ed;
+}
+
+/* styling button dark/light mode */
+.styleButton {
+  background-color: #E6E6FA; 
+  color: #333; 
+  font-size: 1.2rem; 
+  border: none; /* Remove border */
+  border-radius: 20px; /* Rounded corners */
+  padding: 10px 15px; /* Add padding */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; 
+}
+
+.styleButton:hover {
+  background-color: #6495ed ; /* Dark background on hover */
+  color: #f0f0f0; /* Light text on hover */
 }

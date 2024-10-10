@@ -6,59 +6,60 @@
 <head>
     <!--Title-->
     <title>FAQ</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" id="lightDarkMode">
 </head>
 
-<body class="faq-back">
+<body>
     <!--Navigation-->
     <nav>
         <ul class="navigatie">
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="https://oer.hz.nl/6978cdea-fb31-430b-9bf9-63206aa07754">| Course and Examination Regulations
-                    |</a>
-                <a
-                    href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf">
-                    | The Implementation Regulations |</a>
-                <a href="https://learn.hz.nl/my/">| Learn environment |</a>
-                <a href="#">| Study progress |</a>
-                <a href="https://github.com/HZ-HBO-ICT">| Github page |</a>
-            </div>
-            <span style="font-size:30px;cursor:pointer;color:  #6495ed;" onclick="openNav()">&#9776; </span>
-            <script>
-                function openNav() {
-                    document.getElementById("mySidenav").style.width = "250px";
-                    document.getElementById("main").style.marginLeft = "250px";
-                }
-
-                function closeNav() {
-                    document.getElementById("mySidenav").style.width = "0";
-                    document.getElementById("main").style.marginLeft = "0";
-                }
-            </script>
-            <li class="navigatie"><a class="navigatie" href="index.html">Home</a></li>
-            <li class="navigatie"><a class="navigatie" href="profile.html">My Profile</a></li>
-            <li class="navigatie"><a class="navigatie" href="FAQ.html" id="active">FAQ</a></li>
-            <li class="navigatie"><a class="navigatie" href="blog.html">Blog</a></li>
-            <li class="navigatie"><a class="navigatie" href="dashboard.html">Dashboard</a></li>
-        </ul>
-        <a href="https://hz.nl/"><img src="images/hz-university-of-applied-sciences-logo.png" class="hz-logo"
-                alt="hz logo"></a>
-    </nav>
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="https://oer.hz.nl/6978cdea-fb31-430b-9bf9-63206aa07754">| Course and Examination Regulations |</a>
+            <a
+              href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf">
+              | The Implementation Regulations |</a>
+            <a href="https://learn.hz.nl/my/">| Learn environment |</a>
+            <a href="#">| Study progress |</a>
+            <a href="https://github.com/HZ-HBO-ICT">| Github page |</a>
+          </div>
+          <span class="hamburgermenu"  onclick="openNav()">&#9776; </span>
+          <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+              document.getElementById("main").style.marginLeft = "250px";
+            }
+    
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+              document.getElementById("main").style.marginLeft = "0";
+            }
+          </script>
+          <li class="navigatie"><a class="navigatie" href="index.html">Home</a></li>
+          <li class="navigatie"><a class="navigatie" href="profile.html" >My Profile</a></li>
+          <li class="navigatie"><a class="navigatie" href="FAQ.html" id="active">FAQ</a></li>
+          <li class="navigatie"><a class="navigatie" href="blog.html">Blog</a></li>
+          <li class="navigatie"><a class="navigatie" href="dashboard.html">Dashboard</a></li>
+          <li class="navigatie"><button class="styleButton" onclick="changeMode()">🌞 / 🌙</button></li>
+          <a href="https://hz.nl/"><img src="images/hz-university-of-applied-sciences-logo.png" class="hz-logo"
+            alt="hz logo"></a>
+      </ul>
+      
+      </nav>
 </body>
 
 
 <section>
     <table width=100%>
         <tr height="50x">
-            <td colspan=3 style="background-color: #6495ed;">
+            <td colspan=3 class="profilebackground">
                 <!--Header-->
                 <h1 class="text">Frequently asked questions</h1>
             </td>
         </tr>
 
         <tr valign="top">
-            <td style="background-color: #E6E6FA" width="50%" height="70">
+            <td class="profileheads" width="50%" height="70">
                 <!--question 1-->
                 <details>
                     <summary class="hoverfaq">How can you print a document from your laptop at HZ?</summary>
@@ -75,7 +76,7 @@
 </section>
 
 <section class="table-future">
-    <td style="background-color: #E6E6FA" width="50%" height="70">
+    <td class="profileheads" width="50%" height="70">
         <!--question 2-->
         <details>
             <summary class="hoverfaq">How can you scan a document and send it to your laptop at HZ?</summary>
@@ -94,7 +95,7 @@
 
 
     <tr valign="top">
-        <td style="background-color: #E6E6FA" width="50%" height="70">
+        <td class="profileheads" width="50%" height="70">
             <!--question 3-->
             <details>
                 <summary class="hoverfaq">How can you book a project space?</summary>
@@ -115,7 +116,7 @@
 </section>
 
 <section class="table-future">
-    <td style="background-color: #E6E6FA" width="50%" height="70">
+    <td class="profileheads"  width="50%" height="70">
         <!--question 4-->
         <details>
             <summary class="hoverfaq">What are the instructions if you want to park your car at the HZ parking lot?
@@ -131,7 +132,7 @@
     </tr>
 </section>
 <tr valign="top">
-    <td style="background-color: #E6E6FA" width="50%" height="70">
+    <td class="profileheads" width="50%" height="70">
         <!--question 5-->
         <details>
             <summary class="hoverfaq">How can I buy something on the hz webshop?</summary>
@@ -150,7 +151,7 @@
     </section>
 
     <section class="table-future">
-        <td style="background-color: #E6E6FA" width="50%" height="70">
+        <td class="profileheads" width="50%" height="70">
             <!--question 6-->
             <details>
                 <summary class="hoverfaq">How can I find my courses?</summary>
@@ -162,7 +163,7 @@
         </td>
 </tr>
 <tr valign="top">
-    <td style="background-color: #E6E6FA" width="50%" height="70">
+    <td class="profileheads" width="50%" height="70">
         <!--question 7-->
         <details>
             <summary class="hoverfaq">Where can I find my grades?</summary>
@@ -179,7 +180,7 @@
     </section>
 
     <section class="table-future">
-        <td style="background-color: #E6E6FA" width="50%" height="70">
+        <td class="profileheads" width="50%" height="70">
             <!--question 8-->
             <details>
                 <summary class="hoverfaq">What can I do with my 'Student card'?</summary>
@@ -215,4 +216,6 @@
         about my website.
     </marquee>
 </div>
+<script src="/js/darkmodeButton.js"></script>
 </body>
+</html>

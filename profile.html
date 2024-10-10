@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title> My Profile</title>
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.css" id="lightDarkMode">
 
 </head>
 
@@ -24,7 +24,7 @@
         <a href="#">| Study progress |</a>
         <a href="https://github.com/HZ-HBO-ICT">| Github page |</a>
       </div>
-      <span style="font-size:30px;cursor:pointer;color:  #6495ed;" onclick="openNav()">&#9776; </span>
+      <span class="hamburgermenu"  onclick="openNav()">&#9776; </span>
       <script>
         function openNav() {
           document.getElementById("mySidenav").style.width = "250px";
@@ -41,16 +41,18 @@
       <li class="navigatie"><a class="navigatie" href="FAQ.html">FAQ</a></li>
       <li class="navigatie"><a class="navigatie" href="blog.html">Blog</a></li>
       <li class="navigatie"><a class="navigatie" href="dashboard.html">Dashboard</a></li>
-    </ul>
-    <a href="https://hz.nl/"><img src="images/hz-university-of-applied-sciences-logo.png" class="hz-logo"
+      <li class="navigatie"><button class="styleButton" onclick="changeMode()">🌞 / 🌙</button></li>
+      <a href="https://hz.nl/"><img src="images/hz-university-of-applied-sciences-logo.png" class="hz-logo"
         alt="hz logo"></a>
+  </ul>
+  
   </nav>
   <section>
 
     <table width=100%>
 
       <tr height="50x">
-        <td colspan=3 style="background-color: #6495ed;">
+        <td colspan=3 class="text">
           <!--Header-->
           <h1 class="text">My Profile</h1>
         </td>
@@ -58,7 +60,7 @@
 
       <tr valign="top">
 
-        <td style="background-color: #E6E6FA" width="100">
+        <td class="profileheads" width="100">
           <b>Personal information</b>
           <!--Text-->
           <p>Hi, my name is Iris and I am 17 years old.
@@ -80,7 +82,7 @@
           </p>
         </td>
 
-        <td style="background-color: #E6E6FA" width="100" height="200">
+        <td class="profileheads" width="100" height="200">
           <b>Extra-curricular activities</b>
           <!--Orderd list-->
           <ol>
@@ -92,7 +94,7 @@
         </td>
 
       <tr height="50x">
-        <td colspan="2" style="background-color: #6495ed;">
+        <td colspan="2" class="profilebackground">
           <section>
             <!--Header-->
             <h1 class="text">About me :) </h1>
@@ -106,10 +108,10 @@
     <section>
 
       <tr valign="top">
-        <td colspan="2" style="background-color: #E6E6FA">
+        <td colspan="2" class="profileheads">
           <!--Text 1-->
           <b>Random facts about <a
-              href=" https://drive.google.com/file/d/1G-XWeMKylqDQEur4TBt3wU6Q_JkfUv20/view?usp=sharing">me</a></b>
+              href=" C:\Users\Irisv\Downloads\IMG_5733.JPG">me</a></b>
 
           <ul>
             <li>I've got a dog and 4 guinea pigs.</li>
@@ -132,7 +134,7 @@
 
         </td>
 
-        <td style="background-color: #E6E6FA" width="250" height="200">
+        <td class="profileheads" width="250" height="200">
           <div class="contact-box">
             <h1>How to reach me:</h1>
             <ul class="contact">
@@ -154,6 +156,7 @@
       about my website.
     </marquee>
   </div>
+  <script src="/js/darkmodeButton.js"></script>
 </body>
 
 </html>

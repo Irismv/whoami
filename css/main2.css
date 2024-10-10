@@ -1,0 +1,454 @@
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #34495E;
+  }
+  
+  /* Font */
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td,
+  th {
+    border: 1px solid #34495E;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  /* Navigation Style */
+  ul.navigatie {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #34495E;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between
+    
+  }
+  
+  ul.navigatie li.navigatie {
+    float: left;
+  }
+  
+  ul.navigatie li a.navigatie {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Hover color */
+  ul.navigatie li a.navigatie:hover {
+    background-color: grey;
+  }
+  
+  /* Flexbox Navigation */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#34495E ;
+    padding: 0 16px;
+  }
+  
+  .hz-logo {
+    max-height: 50px;
+    margin-right: 0;
+  }
+  
+  /* Table Styling */
+  tr.table {
+    background-color: grey;
+    color: #34495E;
+  }
+  
+  p {
+    font-size: 20px;
+  }
+  
+  /* Footer */
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    color: black;
+    text-align: center;
+  }
+  
+  /* Header*/
+  h1.text {
+    color: black;
+    text-align: center;
+    font-size: large;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+  /* Image Borders */
+  img.images-profile {
+    margin-bottom: 15px;
+    border: 2px solid black;
+    max-width: fit-content;
+  }
+  
+  .image-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  /* FAQ Text */
+  p.faq {
+    font-size: medium;
+    color: darkgray;
+  }
+  ol.faq{
+    color: darkgray;
+  }
+  
+  p.homep {
+    font-size: small;
+    position: relative;
+    top: calc(-3em + 10px);
+    color: darkgray;
+  }
+  
+  /* FAQ Layout */
+  .homedetails[open] {
+    position: fixed;
+    float: right;
+  }
+  .homedetails[open] > summary {
+    list-style-type: '▲';
+  }
+  
+  table.faq-questions {
+    display: flex;
+  }
+  
+  /* FAQ Font Sizes */
+  p.question1 {
+    font-size: large;
+    color: darkgray;
+  }
+  .textquestion {
+    color: darkgray;
+  }
+  
+  p.question2 {
+    font-size: small;
+  }
+  
+  /* Question Mark Image */
+  img.questionmark {
+    display: flex;
+    float: right;
+    margin-right: 20px;
+  }
+  
+  .homesummary {
+    cursor: pointer;
+    position: relative;
+    top: calc(12em + 4px);
+    color: darkgray;
+  }
+  
+  /* Future Table */
+  .table-future {
+    padding-left: 5%;
+    
+  }
+  
+  /* List Style */
+  .expect {
+    text-align: center;
+    padding-left: 0;
+    margin-left: 0;
+    list-style-position: inside;
+    color: darkgray;
+  }
+  
+  .photomain {
+    height: 150px;
+    width: 200;
+  }
+  
+  /* Progress Bar */
+  .wrapper {
+    width: 500px;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    background-color: lightgrey;
+    padding: 3px;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .progress-bar-fill {
+    display: block;
+    height: 22px;
+    background-color: grey;
+    border-radius: 3px;
+    transition: width 500ms ease-in-out;
+    max-width: 60;
+  }
+  
+  .progress-text {
+    text-align: right;
+    margin-top: 5px;
+    font-size: 16px;
+  }
+  
+  /* Blog Post Layout */
+  .blogposts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .post {
+    background-color: gray;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(50% - 20px);
+    box-sizing: border-box;
+  }
+  
+  .post-date {
+    font-size: 0.9em;
+    color: gray;
+    margin-bottom: 10px;
+  }
+  
+  .post-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .post-content {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+  
+  .read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:darkgray;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .read-more:hover {
+    background-color: grey;
+  }
+  
+  /* Text Styling */
+  .text2 {
+    color: black;
+    text-align: center;
+    font-size: large;
+  }
+  
+  /* SWOT Layout */
+  .swot-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    justify-content: space-between;
+  }
+  
+  .swot-box {
+    background-color: grey;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(50% - 20px);
+    box-sizing: border-box;
+  }
+  
+  .swot-box h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .swot-box p {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+  
+  /* for Study Choice */
+  .centered-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 200px;
+  }
+  
+  .box-content {
+    background-color: grey;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .box-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .box-content p {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+  
+  /* Navbar Active  */
+  .navigatie #active {
+    background-color: grey;
+  }
+  
+  /* FAQ Hover */
+  .hoverfaq {
+    cursor: pointer;
+    color: darkgray;
+  }
+  
+  /* how to reach me: profile page */
+  .contact-box {
+    border: 2px solid grey;
+    padding: 10px;
+    /* Space inside box */
+    border-radius: 8px;
+    background-color: #808080;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* sidebar */
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: grey;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #34495E;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: grey;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  /* animation */
+  .marquee {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: scroll 15s linear infinite;
+  }
+  
+  .marquee span {
+    display: inline-block;
+    padding-left: 100%;
+  }
+ 
+  /* all inline css */
+
+  /* blog */
+ .blogbackgroundh1 {
+    background-color:#808080;
+     height: 20px;
+ }
+
+ .hamburgermenu {
+    font-size:30px;
+    cursor:pointer;
+    color:  #808080;
+ }
+
+ /* profile */
+ .profilebackground {
+    background-color:#808080
+ }
+
+ .profileheads {
+    background-color: #34495E
+ }
+
+ /* index */
+ .indexbackground {
+    background-color: #34495E
+ }
+ .divindex {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3%;
+ }
+ /* blogposts */
+.text {
+    background-color: #808080;
+    
+    
+}
+.bpostp{
+    background-color: #808080;
+}
+
+.styleButton {
+  background-color: #34495E;; 
+  color: #333; 
+  font-size: 1.2rem; 
+  border: none; /* Remove border */
+  border-radius: 20px; /* Rounded corners */
+  padding: 10px 15px; /* Add padding */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; 
+}
+
+.styleButton:hover {
+  background-color:  #808080 ; /* Dark background on hover */
+  color: #f0f0f0; /* Light text on hover */
+}
