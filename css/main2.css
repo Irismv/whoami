@@ -452,3 +452,9 @@ body {
   background-color:  #808080 ; /* Dark background on hover */
   color: #f0f0f0; /* Light text on hover */
 }
+.colorprofile {
+  color: grey;
+}
+.coloremail {
+  color: darkgrey;
+}
